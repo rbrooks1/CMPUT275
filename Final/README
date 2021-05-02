@@ -1,0 +1,78 @@
+Name: Ryan Brooks, Charlie Chen
+ID: 1530605, 1530488
+Course: CMPUT 275 winter 2019
+assignment: Final project: basic search engine
+
+included files: search.cpp
+                heahp.h
+                hasht.h
+                library folder containing the database (see database.txt for included files)
+                database.txt
+                linkedlist.h
+                README
+                makefile
+
+running instructions:
+To run the search engine first make sure the library folder is in the same location as
+all the other included files and make sure that database.txt is in the same directory as
+search.cpp.  Finally make sure to put the folder for the code directly onto the desktop
+area so that the terminal shows /home/cmput274/Desktop/Final/ when you
+are in the directory containing the source code or the code will not work.  You should only need to
+type cd Desktop, cd Final, make to compile the program from a new terminal.
+To run the code navigate, through the terminal, to the directory containing search.cpp and
+type make to compile the program and then type ./search.  After the previous command is run
+wait until the database is built and you are prompted to enter a search (the topics in the database
+cover some topics in computer science).  The program will return results and prompt you to enter Y or n
+to search again or end the program.  Follow these instructions if you want to either search again or
+end the program
+
+notes/assumptions:
+To scale up the functionality of the search engine, the database would have been stored in a hard drive and B-trees would have been used instead of hashtables to save memory usage and preserve a fast running time.
+
+We originally planned to use our own hashtable implementation, which is included with the hasht.h and linkedlist.h files and the commented out compute_hash function, entry and strWrapper objects. However the hashtable was unstable and unable to store even a single pdfs worth of words. It was assumed that our hashtable took up too much memory as the error would be inconsisted, alternating between segmentation faults and printing a memory map in terminal. There was not enough time to iron out the issues so an unordered map was used in the final implementation of the search engine.
+
+The code returns the 4 most relevant documents, if there are more than 4, in descending order. The relevance is calculated with the tfidf function which uses the tf-idf algorithm.
+
+ignore the warnings given when make is typed as the code will still compile and be able to be executed, however,
+if for some reason the code does not compile run g++ search.cpp -std=c++11 to compile the code
+
+All style errors involving line length and included library files were ignored as they do not
+affect the functionality or readability of the code.
+
+
+acknowledgements:
+thanks to:
+Arseniy Kouzmenkov
+Joseph Maleshko
+Everton Schumacker Soares
+Daniel Mitchell
+Veronica Salm
+Paresh Rahman
+Jason Cannon
+for help with the code
+
+heap.h taken from our solution for assignment 2 and modified.
+hasht.h taken from our solution for weekly assignment 4 and modified. linkedlist.h remains the same file from weekly excercise 4.
+
+Websites used:
+pdfs taken from:
+    https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&ved=2ahUKEwiyi7KOt4fhAhVYsp4KHVCBCEYQFjAFegQICRAC&url=https%3A%2F%2Fwww.ibanet.org%2FDocument%2FDefault.aspx%3FDocumentUid%3Dc06aa1a3-d355-4866-beda-9a3a8779ba6e&usg=AOvVaw2yHSiQXiopcGOTbzpAOJhP
+    https://ai100.stanford.edu/sites/g/files/sbiybj9861/f/ai_100_report_0831fnl.pdf
+    https://intelligence.org/files/EthicsofAI.pdf
+    http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf
+    http://canvas.projekti.info/ebooks/Algorithm%20Design%20and%20Applications%5BA4%5D.pdf
+    https://www.cs.princeton.edu/~rs/talks/algorithms.pdf
+    https://soaneemrana.org/onewebmedia/ELECTRONIC%20COMMUNICATION%20SYSTEM%20BY%20GEORGE%20KENNEDY.pdf
+    https://arxiv.org/pdf/0903.4314.pdf
+    https://www.cg.tuwien.ac.at/research/publications/1996/mazuryk-1996-VRH/TR-186-2-96-06Paper.pdf
+    https://www.ijser.org/researchpaper/Brief-Introduction-of-Virtual-Reality-its-Challenges.pdf
+    https://www.bsigroup.com/LocalFiles/en-GB/BSI-KM-Digital-Security-en.uk.PDF
+    https://www.gartner.com/binaries/content/assets/events/keywords/security/sec23/sec23_managing_risk_and_security.pdf
+    https://www.intel.com/content/dam/www/public/us/en/documents/guides/digital-security-surveillance-solutions-guide.pdf
+    https://www.clearswift.com/sites/default/files/documents/feature-sheets/Clearswift_Featuresheets_Malware_Protection.pdf
+    http://www.dennistechnologylabs.com/av-protection2015.pdf
+    https://users.ece.cmu.edu/~jzhu/class/18200/F06/L10A_Savvides_Biometrics.pdf
+    https://dataprivacylab.org/TIP/2011sept/Biometric.pdf
+    http://mmrc.amss.cas.cn/tlb/201702/W020170224608150244118.pdf
+reference material:
+    https://en.wikipedia.org/wiki/Tf%E2%80%93idf
