@@ -1,0 +1,30 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CMPUT 275 winter 2019
+assignment: Weekly exercise 5: graph concepts
+
+included files: count_components.cpp
+                edmonton-roads-2.0.1.txt
+                makefile
+                README
+
+running instructions:
+to run count_components.cpp simply move to the directory containing all the files
+mentioned in the README (as well as including the Digraph.h and Digraph.cpp files)
+and in the terminal type make then type ./count_components.  This will return the
+connected components of the textfile in the main function of the .cpp file.
+
+assumptions:
+the edmonton-roads-2.0.1.txt file has been included because it is required for testing
+the graph creation and component counting functions.
+The code is currently using the edmonton-road-2.0.1.txt file to test both the graph creation
+and the connected components counting.  To test on a different file simply change the textFile
+variable name in the main function and it will create and count the components of a graph
+using a new textfile.
+ignored all include style errors, line length style errors, and is this a non-const
+reference style error on line 22 of count_components.cpp
+
+acknowledgements:
+Thank you to Arseniy Kouzmenkov for help with fixing compiling errors and with reading a file and
+finding instances of commas in a comma seperated list.
+Thank you to Logan Gilmour for help with comparing a string and a char value.

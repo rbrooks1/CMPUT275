@@ -1,0 +1,28 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CMPUT 275 winter 2019
+assignment: Weekly exercise 4: Dynamic hashing and makefile
+
+included files: hashtable.h
+                linkedlist.h
+                exercise4.cpp
+                makefile
+                README
+
+running instructions:
+to run exercise4.cpp simply move to the directory containing all the files
+mentioned in the included files section of this document and in your terminal
+type make to compile and link the files together.  Afterwards type ./exercise4
+to run the program.
+
+assumptions:
+If you are passing no argument to the creation of the hashtable class please remove
+the brackets (i.e. if you are creating a hashtable class with no arguments
+please use table and not table()) also I could not style check the .h files
+and as well I style checked the .cpp fileas it does not affect the functionality
+of the code. I also was not sure if I needed to put a file header in the .cpp file,
+the nakefile, and the linkedlist.h file so I did not (it was not mentioned in the exercise).
+I only put a file header in the hashtable.h file.
+
+Acknowledgements:
+Thank you to Touqir Sajed for help with this code.

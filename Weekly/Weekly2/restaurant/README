@@ -1,0 +1,38 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CMPUT 275 winter 2019
+assignment: Weekly exercise 2: restaurants and pointers
+
+included files: get_restaurant.cpp
+                README
+                makefile
+
+Accessories: arduino board
+             adafruit ILI9341 lcd Display
+             formatted micro SD card
+
+Wiring insturctions:
+to wire the Adafruit lcd display navigate to the arduino resources
+section of the CMPUT 275 eclass page and find the link named
+wiring for adafruit ILI9341 or follow the below link
+https://eclass.srv.ualberta.ca/pluginfile.php/4411230/mod_resource/content/1/cmput274-display-wiring.txt
+
+running instructions:
+to run the code navigate to the correct directory using the terminal
+and run make upload to upload the program onto your SD card while it is
+inserted into the adafruit lcd display (assuming it is properly formatted
+as was done in class).  To run the tests simply tap your finger inside the boxes
+labelled fast or slow.
+
+assumptions:
+The SD card must be formatted in the same way as was done in the first
+CMPUT 275 class
+ignored casting, line length, and potential indentation errors when
+style checking
+
+Acknowledgements:
+Thank you to the CMPUT 275 team for the code basis for this assignment
+Thank you to Joseph Meleshko for help with timing and making sure the serial
+monitor printing worked properly.
+Thank you to Everton Schumacker Soares for help with making sure the touch screen
+reacted to touches inside the fast and slow boxes

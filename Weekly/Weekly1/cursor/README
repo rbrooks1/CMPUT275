@@ -1,0 +1,42 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CKPUT 275 winter 2019
+assignment: Weekly exercise 1: Display and joystick
+
+included files: joy_cursor.cpp
+                README
+                makefile
+
+Accessories: arduino board
+             adafruit ILI9341 lcd Display
+             joystick
+             formatted micro SD card
+
+Wiring insturctions:
+to wire the Adafruit lcd display navigate to the arduino resources
+section of the CMPUT 275 eclass page and find the link named
+wiring for adafruit ILI9341 or follow the below link
+https://eclass.srv.ualberta.ca/pluginfile.php/4411230/mod_resource/content/1/cmput274-display-wiring.txt
+for the joystick connect power to the power line of the breadboard, ground
+to ground on the breadboard, connect VRx to pin A0, VRy to pin A1, and
+connect SW to pin 2 of the arduino
+
+running instructions:
+to run the code navigate to the correct directory using the terminal
+and run make upload to upload the program onto your SD card while it is
+inserted into the adafruit lcd display (assuming it is properly formatted
+as was done in class).  To move the cursor on the screen just move the
+joystick.  Depending on how far the joystick is moved the cursor
+will movefaster or slower
+
+assumptions:
+The SD card must be formatted in the same way as was done in the first
+CMPUT 275 class 
+The joystick and lcd display must be wired exactly as is mentioned above
+ignored length of code per line style check and potential indentation error
+style check
+
+Acknowledgements:
+Thank you to the CMPUT 275 team for the code basis for this assignment
+Thank you to Joseph Meleshko for help with the joystick speed and flashing
+cursor problem

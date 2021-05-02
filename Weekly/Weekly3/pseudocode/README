@@ -1,0 +1,23 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CKPUT 275 winter 2019
+assignment: Weekly exercise 3: pseudocode to code
+
+included files: textmatch.cpp
+                flipflop.cpp
+                README
+
+running instructions:
+to run the .cpp files move to the local directory and use
+g++ <code>.cpp, where <code> is the name of the program, and then tyoe
+./a.out
+if you want to run the code using the test centre, simply put the code
+in the soln folder of the appropriate test centre zip file and in the folder
+containing the soln folder run ./optestcenter,sh in the terminal.
+
+assumptions:
+for flipflop.cpp:
+math.h was used for the ceil function
+for textmatch.cpp:
+cstring was used for strlen
+ignored c-style casting and variable length array style errors

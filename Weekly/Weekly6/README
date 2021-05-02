@@ -1,0 +1,33 @@
+ame: Ryan Brooks
+ID: 1530605
+Course: CMPUT 275 winter 2019
+assignment: Weekly exercise 6: STL concepts
+
+included files: student_hash.cpp
+                complex_postfix.cpp
+                makefile
+                README
+
+running instructions:
+to run complex_postfix.cpp simply navigate through the terminal
+to the directory containing all the files described in the included
+files section and type either make, make all, or make calc.  Afterwards
+type ./calc to run the program.
+to run student_hash.cpp do the same as for complex_postfix, but
+instead type make all, make student, or make and the type ./student
+to run the program.
+
+Assumptions:
+for both files all c++ vs c style errors and all length errors were
+ignored as the do not change the functionality of the code.
+for complex_postfix.cpp all style errors pertaining to extra space before
+function call were ignored (these had to do with the declaration of a pair
+and the variable associated with it)
+for student_hash.cpp do not indent within a namespace error and potential indentation
+error were ignored as they do not affect the functionality of the code.
+
+Acknowledgments:
+Thank you to:
+Jason Cannon for help with stack.pop vs stack.top and for help overloading the == operator
+Everton Schumacker soares for help with typedef declaration and type declaration of
+the stack.
