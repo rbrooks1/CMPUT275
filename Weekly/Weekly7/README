@@ -1,0 +1,24 @@
+Name: Ryan Brooks
+ID: 1530605
+Course: CMPUT 275 winter 2019
+assignment: Weekly exercise 7: AVL trees
+
+included files: avlaux.h
+                avlmap.h
+                ex7test.cpp
+                makefile
+                README
+
+running instructions:
+To run the code simply move to the directory containing all the included files
+in the terminal and type make then type ,/ex7test.out to run the executable.  You
+can use a file as your test by typing ./ex7test.out > <filename> in the terminal or
+you can simply follow the instructions after running the executable.
+
+Assumptions:
+Could not style check the .h files and as such I have not edited the code for style.
+I hope the style is correct.
+
+Acknowledgment:
+Thanks to the CMPUT 275 team for the template code for this assignment
+Thanks to Touqie Sajed for help with editing node values during rotation
