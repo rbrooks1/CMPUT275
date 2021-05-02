@@ -1,0 +1,111 @@
+Name: Ryan Brooks, Charlie Chen
+ID: 1530605, 1530488
+Course: CMPUT 275 winter 2019
+assignment: Assignment 2 part 2: client
+
+included directories: server: digraph.cpp
+                              digraph.h
+                              dijkstra.cpp
+                              dijkstra.h
+                              heap.h
+                              Makefile
+                              serialport.cpp
+                              serialport.h
+                              server.cpp
+                              server_util.cpp
+                              server_util.h
+                              wdigraph.h
+                              edmonton-roads-2.0.1.txt
+                      client: client.cpp
+                              consts_and_types.h
+                              lcd_image.cpp
+                              lcd_image.h
+                              Makefile
+                              map_drawing.cpp
+                              map_drawing.h
+                      README
+
+Accessories: arduino board
+             adafruit ILI9341 lcd Display
+             joystick
+             formatted micro SD card
+             2 buttons
+
+Server:
+
+    running instructions:
+    to run the server move to the correct directory and type make into the
+    terminal
+
+    notes:
+    The data structure holding the vertices for the paths from the start to end vertex
+    deletes itself between functions.  The cause for this was unable to be identified,
+    however if this problem was not present then the coordinates would be sent through
+    the serial connection based on the order of the vertex in the data structure.
+    It was observed that all vertices between the starting and end points were found and
+    stored into the data structure, however, they disappeared without a delete command during
+    runtime.
+    All line length and c-style style errors were ignored.
+
+Client:
+
+    Wiring instructions:
+    
+    TFT Display:
+
+    The display pins are numbered left to right in this document when they are being viewed
+    with their labels showing rightside up. Note you do not require the touchscreen for this assignment,
+    so it is probably a lot easier to not wire the Y+/X+/Y-/X- pins.
+
+    Display Pin     Arduino Mega Pin
+    1 GND           BB GND bus
+    2 Vin           BB Vcc (+ive) bus
+
+    4 CLK           Pin 52
+    5 MISO          Pin 50
+    6 MOSI          Pin 51
+    7 CS            Pin 10
+    8 D/C           Pin 9
+
+    19 CCS          Pin 6
+
+Zoom in and out buttons:
+
+    Button          Arduino Mega Pin
+    Zoom In         Pin 2
+    Zoom Out        Pin 3
+
+Joystick connections:
+
+    Joystick Pin    Arduino Mega Pin
+    +5v             Vcc
+    GND             GND
+    VRx             Analog 1
+    VRy             Analog 0
+    SW              Pin 8
+    
+    running instructions:
+    To run the client code move to the directory containing the client.cpp file and type
+    make upload.  Use the joystick to move and click the joystick to select start and end
+    points.  Click the buttons to change the zoom of the map.
+
+    notes:
+    The zoom buttons do not work for some reason and if you zoom into the highest zoom
+    will cause the cursor to create a trail.  It has been stated by an instructor that this
+    does not need to be fixed.
+    All length and c-style style errors were ignored.
+
+acknowledgements:
+    Thank you to the cmput 275 team for the provided code for part 2
+    and the provided code for assignment 2 part 1.
+    Thanks to:
+    Arseniy Kouzmenkov
+    Jason Cannon
+    Logan Gilmour
+    Joseph Meleshko
+    Parash Rahman
+    Touqir Sajed
+    Veronica Salm
+    Everton Shumacker Soares
+    Mohammad Hossein Motallebi Shabestari
+    For help with the code.
